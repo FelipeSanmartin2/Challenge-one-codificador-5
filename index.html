@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    
+        body {
+            background-color: #F3F5FC;
+            margin: 0 auto;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 480px;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-areas:
+                "my-header  my-areaResultado"
+                "my-areaEncriptado my-areaResultado"
+                "my-footer my-footer";
+        }
+    
+        header {
+
+            display: flex;
+            grid-area: my-header;
+        }
+        header img {
+            margin-top: 40px;
+            margin-left: 84px;
+            
+        }
+    
+        .areaEncriptado {
+            grid-area: my-areaEncriptado;
+            display: flex;
+            justify-content: center;
+            
+        }
+    
+        .areaResultado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 40px;
+            grid-area: my-areaResultado;
+            width: 400px;
+            height: 944px;
+            background: #FFFFFF;
+            box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+            border-radius: 32px;
+        }
+    
+        .areaResultado img {
+            width: 336px;
+            height: 304px;
+            left: 1032px;
+            top: 283px;
+        }
+    
+        footer {
+            grid-area: my-footer;
+        }
+    
+        #texto {
+            background-color: transparent;
+            border: none;
+            resize: none;
+            outline: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 150%;
+        }
+    
+        #texto::placeholder {
+            color: #0A3871;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="Imagenes/Logo.png" alt="">
+        </h1>
+    </header>
+    <section class="areaEncriptado">
+        <textarea name="" id="texto" cols="30" rows="10" placeholder="Ingrese aqui el Texto"></textarea>
+    </section>
+    <section class="areaResultado">
+        <img src="Imagenes/Muñeco.png" alt="">
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+    </section>
+    <footer>
+        <ul><h2>Trabajo realizado por:</h2>
+            <li>Felipe San Martin</li>
+            <li>Chileno</li>
+            <li><a href="https://github.com/FelipeSanmartin2">github //FelipeSanmartin2</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
