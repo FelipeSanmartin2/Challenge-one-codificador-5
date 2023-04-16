@@ -38,4 +38,4 @@ gaitober" => "gato"
 
 # :sparkles:Autor
 
-[![Linkedin]([https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg](https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png))](https://www.linkedin.com/in/felipe-san-martin-santander-4922b6164/)
+[![Linkedin](https://img.shields.io/badge/Linkedin-0072b1?logo=linkedin&logoColor=white&style=for-the-badge)](https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png))](https://www.linkedin.com/in/felipe-san-martin-santander-4922b6164/)
