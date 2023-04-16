@@ -3,7 +3,7 @@
 }
 
 body {
-    height: 90vh;
+    height: 110vh;
     background-color: #F3F5FC;
     margin: 0;
     display: grid;
@@ -71,7 +71,7 @@ header img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 40px 40px 0px 0px;
+    margin: 40px 80px 0px 0px;
     grid-area: my-areaResultado;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -144,4 +144,122 @@ footer ul li a {
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
+}
+
+/*reponsivo para moviles */
+@media screen and (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header img {
+        margin-top: 2%;
+        margin-left: 4%;
+        width: 100px;
+    }
+
+    .areaEncriptado {
+        padding: 20px;
+    }
+
+    .buttonsInfo {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        gap: 16px;
+    }
+
+    .buttons input {
+        width: 343px; ;
+        height: 67px;
+        border-radius: 24px;
+        border: 1px solid #0A3871;
+        line-height: 19px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #0A3871;
+        background-color: #D8DFE8;
+    }
+
+    #texto {
+        font-size: 24px;
+    }
+
+    .areaResultado {
+        margin: 20px;
+        border-radius: 0px;
+        padding: 32px;
+        border-radius: 32px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    }
+
+    .areaResultado img {
+        display: none;
+    }
+
+    .boton-resultado {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: auto;
+        text-align: center;
+    }
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header img {
+        margin-top: 30%;
+        margin-left: 4%;
+        width: 120px;
+    }
+
+    .areaEncriptado {
+        padding: 40px;
+    }
+
+    .buttonsInfo {
+        margin-bottom: 40px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .buttons input {
+        width: 328px;
+    }
+
+    #texto {
+        font-size: 32px;
+        height: 50vh;
+    }
+
+    .areaResultado {
+        margin: 40px;
+    }
+
+    .areaResultado img {
+        display: none;
+    }
+
+    .boton-resultado {
+        width: 328px;
+    }
+
+    footer {
+        margin-top: auto;
+        text-align: center;
+    }
 }
