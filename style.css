@@ -5,7 +5,7 @@
 body {
     height: 90vh;
     background-color: #F3F5FC;
-    margin: 0 ;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 1fr 100px;
@@ -78,17 +78,20 @@ header img {
     border-radius: 32px;
 }
 
-h2, h3 {
+h2,
+h3 {
     text-align: center;
 }
 
 footer {
     grid-area: my-footer;
 }
+
 footer ul li {
     list-style: none;
     color: #0A3871;
 }
+
 footer ul li a {
     text-decoration: none;
     color: #0A3871;
@@ -142,4 +145,3 @@ footer ul li a {
     font-size: 24px;
     line-height: 150%;
 }
-
