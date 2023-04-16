@@ -18,11 +18,11 @@ Este es un proyecto que desarrollamos en cuatro semanas para crear una aplicaciÃ
 
 Las "llaves" de encriptaciÃ³n que utilizamos son las siguientes:
 
-La letra "e" se convierte en "enter".
-La letra "i" se convierte en "imes".
-La letra "a" se convierte en "ai".
-La letra "o" se convierte en "ober".
-La letra "u" se convierte en "ufat".
+- La letra "e" se convierte en "enter".
+- La letra "i" se convierte en "imes".
+- La letra "a" se convierte en "ai".
+- La letra "o" se convierte en "ober".
+- La letra "u" se convierte en "ufat".
 
 # :memo: Requisitos
 
@@ -38,4 +38,4 @@ gaitober" => "gato"
 
 # :sparkles:Autor
 
-[![Linkedin](https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg)](https://www.linkedin.com/in/felipe-san-martin-santander-4922b6164/)
+[![Linkedin]([https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg](https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png))](https://www.linkedin.com/in/felipe-san-martin-santander-4922b6164/)
