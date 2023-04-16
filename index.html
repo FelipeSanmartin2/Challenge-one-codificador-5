@@ -1,115 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
-    <style>
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-    
-        body {
-            background-color: #F3F5FC;
-            margin: 0 auto;
-            min-height: 90HV;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 100px 1fr 100px;
-            grid-template-areas:
-                "my-header  my-areaResultado"
-                "my-areaEncriptado my-areaResultado"
-                "my-footer my-footer";
-        }
-    
-        header {
-
-            display: flex;
-            grid-area: my-header;
-        }
-        header img {
-            margin-top: 40px;
-            margin-left: 84px;
-            
-        }
-    
-        .areaEncriptado {
-            grid-area: my-areaEncriptado;
-            display: flex;
-            flex-direction: column;
-            padding-top: 68px;
-            padding-left: 240px;
-            
-        }
-
-        .areaEncriptado .buttons {
-            display: flex;
-            justify-content: space-between;
-            gap: 8px;
-        }
-
-        .areaEncriptado .buttons input {
-            cursor: pointer;
-            width: 328px;
-            height: 67px;
-            border-radius: 24px;
-            border: 1px solid #0A3871;
-            line-height: 19px;
-            font-size: 16px;
-            font-weight: 400;
-            color: #0A3871;
-            background-color: #D8DFE8;
-        }
-        
-        #encriptar {
-            background-color: #0A3871;
-            color: #F3F5FC;
-        }
-    
-        .areaResultado {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 40px;
-            grid-area: my-areaResultado;
-            background: #FFFFFF;
-            box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-            border-radius: 32px;
-        }
-    
-        .areaResultado img {
-            width: 336px;
-            height: 304px;
-            left: 1032px;
-            top: 283px;
-        }
-    
-        footer {
-            grid-area: my-footer;
-        }
-    
-        #texto {
-            background-color: transparent;
-            border: none;
-            resize: none;
-            outline: none;
-            font-family: 'Inter', sans-serif;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 150%;
-        }
-    
-        #texto::placeholder {
-            color: #0A3871;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/adaa8f99f8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
     <header>
         <h1>
@@ -117,29 +21,40 @@
         </h1>
     </header>
     <section class="areaEncriptado">
-        <textarea name="" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-        <div class="buttons">
-            <div>
-                <input type="submit" id="encriptar" value="Encriptar" onclick="encriptarTexto()">
+        <div class="texto">
+                    <textarea autofocus name="" id="texto" cols="22" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+
+        <div class="buttonsInfo">
+            <div class="info">
+                <p><i class="fa-solid fa-circle-exclamation"></i> usar letras minusculas y sin acento.</p>
             </div>
-            <div>
-                <input type="submit" id="desencriptar" value="Desencriptar" onclick="desencriptarTexto()">
+            <div class="buttons">
+                <div>
+                    <input type="submit" id="encriptar" value="Encriptar" onclick="encriptarTexto()">
+                </div>
+                <div>
+                    <input type="submit" id="desencriptar" value="Desencriptar" onclick="desencriptarTexto()">
+                </div>
             </div>
         </div>
     </section>
     <section class="areaResultado">
         <img src="Imagenes/Muñeco.png" alt="">
         <h2>Ningún mensaje fue encontrado</h2>
-        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
     </section>
     <footer>
         <ul>
             <h2>Trabajo realizado por:</h2>
-            <li>Felipe San Martin</li>
-            <li>Chileno</li>
-            <li><a href="https://github.com/FelipeSanmartin2">github //FelipeSanmartin2</a></li>
+            <li><i class="fa-solid fa-user"></i></i> Felipe San Martin</li>
+            <li><i class="fa-brands fa-github"></i><a href="https://github.com/FelipeSanmartin2"> github
+                    //FelipeSanmartin2</a></li>
+            <li><i class="fa-brands fa-linkedin"></i><a
+                    href="https://www.linkedin.com/in/felipe-san-martin-santander-4922b6164/"> Linkedin
+                    //felipe-san-martin-santander-4922b6164</a></li>
         </ul>
     </footer>
-
 </body>
+
 </html>
