@@ -1,6 +1,6 @@
 <div align="center"><img src="https://raw.githubusercontent.com/FelipeSanmartin2/Challenge-one-codificador-5/main/Imagenes/one.png" width="200"/></div>
 
-# 🚀 Challenge Encriptador | Oracle Alura | Proyecto de encriptación y desencriptación de texto
+# Alura Challenge |One Oracle |Proyecto de encriptación y desencriptación de texto
 <p align="center" >
      <img src="https://raw.githubusercontent.com/FelipeSanmartin2/Challenge-one-codificador-5/main/Imagenes/Captura%20de%20pantalla%202023-04-16%20181516.jpg">
 </p>
